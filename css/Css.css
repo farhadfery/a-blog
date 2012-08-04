@@ -1,0 +1,33 @@
+        .eq_slideshow  /* main div contain all elements */
+        {
+            
+            width: 960px; /*equal width li */
+            margin: 0 auto;
+        }
+        .parent_sliding
+        {
+            width: 960px; /*equal width li */
+            position: relative;
+            overflow: hidden;
+            border-bottom: solid 2px #9bc250;
+        }
+        .eqAutoSliding
+        {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 210px;
+            padding:0;
+            margin:0;
+            list-style-type:none;
+        }
+        .eqAutoSlidingli
+        {
+            width: 960px; /*equal width parent_sliding */
+            float: left;
+            overflow:hidden;
+        }
+        .eqAutoSlidingli img
+        {
+            width: 960px;
+        }

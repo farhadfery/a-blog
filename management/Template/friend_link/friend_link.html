@@ -1,0 +1,37 @@
+<script src="js/friend_link.js" language="javascript" ></script>
+<link href="css/freind_link.css" rel="stylesheet" type="text/css"/>
+<table width="100%" align="center" dir="rtl" border="0" style="border:1px solid #CCC;">
+  <tr bgcolor="#FF9900">
+    <td colspan="3">لینک دوستان <img class="Refresh" id="archive_refresh" src="images/Refresh.png"/></td>
+  </tr>
+  <tr >
+    <td width="50px;" align="left" >نام :</td>
+    <td width="290px" ><input id="name" type="text" /></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td  align="left">لینک :</td>
+    <td><input id="tflink" type="text" /></td>
+    <td><input id="insert"  type="button" value="ذخیره" />
+      <input style="display:none;" type="button" value="ذخیره" id="edit"/></td>
+  </tr>
+</table>
+<div id="tb-link">
+<table border="0" align="center" dir="rtl" width="100%" style="border:1px solid #CCC">
+<tr  bgcolor="#FF9900" align="center">
+  <td width="50">حذف</td>
+  <td width="100">نام</td>
+  <td width="800px">لینک</td>
+</tr>
+<!-- BEGIN BLOCK FRIEND-LINK -->
+<tr  bgcolor="{COLOR}">
+  <td align="center"><input class="chdel" name="id" value="{ID}" type="checkbox" /></td>
+  <td class="edit"  style="cursor:pointer" Edit-id="{ID}" Edit-link="{LINK}" name="{NAME}">{NAME}</td>
+  <td >{LINK}</td>
+</tr>
+<!-- END BLOCK FRIEND-LINK -->
+<tr> 
+  <td bgcolor="#FF9900" colspan="3"><input id="del"type="button" value="حذف" /></td>
+</tr>
+</table>
+</div>

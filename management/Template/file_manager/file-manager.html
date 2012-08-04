@@ -1,0 +1,41 @@
+<link href="css/file-manager.css" rel="stylesheet" type="text/css"/>
+
+<div id="file-manager">
+  <div id="Folder">
+    <label id="lbl-folder">مدیریت فایل ها</label>
+    <a href="?page=file_manager&Folder=about"><img src="images/about.png" width="45"/></a>
+     <a href="?page=file_manager&Folder=upload"><img src="images/upload.png" width="45"/></a>
+     <a href="?page=file_manager&Folder=Slider"><img src="images/slider.png" width="45"/></a> 
+     </div>
+  <table id="tbl-file-manager-head" dir="rtl" border="0" cellspacing="0">
+    <tr id="tr-head" align="center">
+      <td width="15px"></td>
+      <td width="100px">نمایش</td>
+      <td >نام فایل</td>
+      <td width="80px">اندازه فایل</td>
+      <td width="80px">حذف</td>
+    </tr>
+  </table>
+  <div id="file">
+    <table id="tbl-file-manager" dir="rtl"  width="852" border="0" cellspacing="0">
+    <!-- BEGIN BLOCK TR-FILE -->
+      <tr>
+        <td width="100px" align="center"><img width="60" src="../images/{UP-FOLDER}/{CONTENT}"/></td>
+        <td>{FILENAME}</td>
+        <td width="80px" align="center" >{FILESIZE} کیلوبایت</td>
+        <td width="80px" align="center"><a href="modules/includes/upload.php?Folder={UP-FOLDER}&del={CONTENT}" ><img width="40px;" src="images/del.png" /></a></td>
+      </tr>
+      <!-- END BLOCK TR-FILE -->
+    </table>
+  </div>
+  <fieldset id="div-upload">
+    <legend>آپلود فایل</legend>
+    <form method="post" action="modules/includes/upload.php?Folder={UP-FOLDER}" enctype="multipart/form-data">
+      <div >
+        <input id="Up"  class="filename" name="filename" type="file"  size="20"/>
+        <input id="Up" value="آغاز آپلود" type="submit" name="upload"/>
+      </div>
+    </form>
+  </fieldset>
+  <label>بیشتر از20 مگابایت نمی توانید آپلود کنید</label>
+</div>

@@ -1,0 +1,30 @@
+<link href="css/comment.css" rel="stylesheet"/>
+<script language="javascript" type="text/javascript" src="js/comment.js"></script>
+<input type="hidden" id="UpId" value="{ID}"/>
+<table width="510px" border="0" dir="rtl" id="TblView">
+  <tr>
+    <td>نام :</td>
+    <td><input type="text" id="name" value="{NAME}"/> </td>
+    <td>ایمیل :</td>
+    <td><input type="text" id="email" value="{EMAIL}"/></td>
+  </tr>
+  <tr>
+     <td>موضوع :</td>
+   <td colspan="3"><input class="Upsubject" readonly="readonly" id="subject" type="text" value="{SUBJECT}"/></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td colspan="3"><textarea id="comment" >{COMMENT}</textarea></td>
+  </tr>
+    <tr>
+    <td>جواب</td>
+    <td colspan="3"><textarea id="answer">{ANSWER}</textarea></td>
+  </tr>
+</table>
+<table  width="510px" border="0" dir="rtl" id="TblControl">
+  <tr>
+    <td width="250px"></td>
+    <td width="250px"><input type="button" class="insert" value="ذخیره"/></td>
+     <td width="250px"></td>
+  </tr>
+</table>

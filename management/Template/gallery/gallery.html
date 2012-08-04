@@ -1,0 +1,52 @@
+<link rel="stylesheet" type="text/css" href="css/gallery.css"/>
+<script language="javascript" type="text/javascript" src="js/gallery.js"></script>
+<form action="modules/includes/gallery.php" method="post">
+<input type="hidden" name="PHOTOGRAPHER" value="{PHOTOGRAPHER}"/>
+<table class="TblGallery" width="100%" border="0" align="center" dir="rtl">
+  <tr>
+    <td width="110px">دسته بندی :</td>
+    <td>
+       <select class="section" name="section">
+         <!-- BEGIN BLOCK SECTION -->
+          <option value="{ID}">{NAME}</option>
+         <!-- END BLOCK SECTION -->
+       </select>
+     </td>
+    <td width="110px">نام :</td>
+    <td><input class="text"  name="txtname" id="txtname" type="text" /></td>
+  </tr>
+  <tr>
+    <td>توضحات عکس :</td>
+    <td><textarea name="description" class="text"></textarea></td>
+    <td>آدرس عکس :</td>
+    <td><input class="text"  name="add" id="txtadd" type="text" /></td>
+  </tr>
+  <tr>
+
+  </tr>
+  <tr>
+    <td></td>
+    <td><input class="text" type="submit" value="ذخیره"/></td>
+    <td></td>
+    <td></td>
+  </tr>
+</table>
+</form>
+
+    
+<!-- BEGIN BLOCK PIC -->
+     <div id="GalleryImg" class="Div{ID}">
+          <div class="ImgTitle">{NAME}</div>
+          <center><img  class="Gpic" src="{ADD}" height="100px" alt="image" ></center>
+          <div class="EditImg">
+                          <img class="GDel" DelId="{ID}" src="images/trash.gif" alt="حذف"/></a> 
+                          <a href="?page=edit_gallery&EDIT={ID}"><img src="images/edit.png" width="20" alt="ویرایش"/></a>
+          </div>
+     </div>     
+<!-- END BLOCK PIC -->
+             <div style="clear:both"></div>
+  <div class="count">
+   <!-- BEGIN BLOCK PAGE -->
+    <a class="acount" href="?page=gallery&count={COUNT}">{COUNT}</a>
+   <!-- END BLOCK PAGE --> 
+</div>   

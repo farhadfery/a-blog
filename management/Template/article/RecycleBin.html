@@ -1,0 +1,19 @@
+<script type="text/javascript" src="js/article.js"></script>
+<link rel="stylesheet" type="text/css" href="css/article.css"/>
+<div class="HeaderDiv"><label>مطالب موجود در سطل زباله</label></div>    
+<div class="MainDiv">
+<!-- BEGIN BLOCK RecycleBin -->
+  <div class="ROW" id="{ID}">
+          <div class="RowTitle">{TITLE}</div>
+          <div class="RowDel"><img  class="RecycleBin-Delete" src="images/trash.gif" DelId="{ID}"/></div>
+          <div class="RowArchive"><img  class="RecycleBin-Restore" src="images/icon-16-archive.png" DelId="{ID}"/></div>
+          <div style="clear:both" ></div>
+  </div>    
+<!-- END BLOCK RecycleBin -->  
+</div>
+
+ <div class="page">
+   <!-- BEGIN BLOCK PAGE -->
+    <a class="count" href="?page=RecycleBin&count={COUNT}">{COUNT}</a>
+   <!-- END BLOCK PAGE -->
+ </div>  

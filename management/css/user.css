@@ -1,0 +1,121 @@
+@charset "utf-8";
+/* CSS Document */
+#maindiv{
+	border:1px solid #CCC;
+	border-radius:5px;
+	direction:rtl;
+	position:relative;
+	}
+#header{
+	background:#F90;
+	text-align:right;
+	height:20px;
+	font-family:'lucida grande',tahoma,verdana,arial,sans-serif,Tahoma,Verdana,Georgia,Times;
+	font-weight:bold;
+	font-size:12px;
+	padding-top:10px;
+	border-bottom:1px solid #555;
+	box-shadow:#666 1px 1px 3px ;
+	margin-bottom:20px;
+	}
+#header label{
+	margin:10px 10px 0 0 ;
+	height:20px;}
+#footer{
+	margin-top:20px;
+	background:#F90;
+	box-shadow:#666 1px 1px 3px ;
+	text-align:center;
+	height:30px;}		
+input[type="text"],[type="password"]{
+	width:200px;
+	border:1px solid #CCC;
+	border-radius:5px;}	
+#NewEmail{
+	text-align: left;
+}	
+table{
+	margin:0 auto 5px auto;
+	border:1px solid #CCC;
+	border-radius:5px;
+	font-size:12px;
+	font-weight:bold;
+	font-family:'lucida grande',tahoma,verdana,arial,sans-serif,Tahoma,Verdana,Georgia,Times;
+	background-color:#EEE;
+}
+td{
+	border:1px solid #DDD;}
+select{
+	width:150px;
+	border:1px solid #CCC;
+	border-radius:0 5px 5px 0;
+	}
+#mess{
+   font-family:'lucida grande',tahoma,verdana,arial,sans-serif,Tahoma,Verdana,Georgia,Times;
+   font-size:14px; 
+   text-align:center;
+   	width:700px;
+	height:20px;
+	border-radius:5px;
+	display:none;
+	padding-top:5px;
+	margin:-20px auto 10px auto;
+	}
+.edit,.del,.email{
+	width:16px;
+	cursor:pointer;
+	margin-right:10px;
+	}
+.	
+.DivUser{
+	border-radius:5px;
+	width:auto;
+	height:115px;
+	margin-right:5px;
+	margin-top:5px;
+	font-size:12px;
+	float:right;
+}
+.hide{
+	color:#FFF;
+	 }
+#save{
+	border:1px solid #CCC;
+	border-radius:5px;
+	background-color:#0CC;
+	font-family:'lucida grande',tahoma,verdana,arial,sans-serif,Tahoma,Verdana,Georgia,Times;
+	width:50px;
+	height:25px;
+	cursor:pointer;
+	}
+#save:hover{
+	background-color:#0C6;
+	}
+#User{
+	border:1px solid #CCC;
+	width:285px;
+	height:100px;
+	float:right;
+	margin:6px;
+	border-radius:5px;
+	}
+.avatar{
+	width:100px;
+	height:100px;
+	border-right:1px solid #CCC;
+	float:left;
+	margin-top:-72px;
+	}
+.UserName,.UserEmail,.Control{
+	height:30px;
+	width:184px;
+	float:right;
+	border-bottom:1px solid #CCC;
+	padding-top:5px;
+	overflow: hidden;
+	}
+#insert{
+	float: left;
+	margin-left: 30px;
+}	
+	

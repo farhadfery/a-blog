@@ -1,0 +1,46 @@
+  <link rel="stylesheet" href="css/banned.css" />
+  <script language="javascript" type="text/javascript" src="js/banned.js"></script>
+	<script>
+	$(function() {
+		$( "#accordion" ).tabs();
+	});
+	</script>
+    <div id="accordion">
+	<ul>
+		<li><a class="bannA" href="#tabs-1">ثبت آی پی</a></li>
+		<li><a class="bannA" href="#tabs-2">مدیریت لیست سیاه</a></li>
+	</ul>
+	<div id="tabs-1">
+       <table id="tbl-ip" border="0" width="500px" dir="rtl" align="center">
+          <tr>
+             <td width="120px" align="left"><label>آدرس آی پی :</label></td>
+             <td><input class="textip" type="text"/></td>
+          </tr>
+          <tr>
+             <td valign="top" align="left"><label>متن پیام :</label></td>
+             <td><textarea class="mass" ></textarea></td>
+          </tr>
+          <tr>
+              <td></td>
+              <td ><input id="insert" type="button" value="ثبت آی پی در لیست سیاه" /></td>
+          </tr>
+       </table>
+       
+	</div>
+    
+	<div id="tabs-2">
+    <table id="tblip" width="600px" border="0" align="center" dir="rtl">
+       <tr bgcolor="#999999">
+          <td width="100px">IP</td>
+          <td width="450px">پیام</td>
+          <td width="50px"></td>
+       </tr>
+       <!-- BEGIN BLOCK TR-IP -->
+       <tr>
+          <td>{IP}</td>
+          <td>{MASS}</td>
+          <td><img Delid="{ID}" src="images/trash.gif" id="del"/></td>
+       </tr>
+       <!-- END BLOCK TR-IP -->
+    </table>
+    </div>

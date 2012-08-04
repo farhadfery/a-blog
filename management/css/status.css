@@ -1,0 +1,43 @@
+@charset "utf-8";
+/* CSS Document */
+#note{
+	width:500px;
+    height:254px;
+	background: url(../images/note.png);
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:20px;
+	z-index:999999;
+	position:relative;
+    -moz-box-shadow: 0px 2px 15px #999; -webkit-box-shadow: 0px 2px 15px #999; box-shadow: 0px 2px 15px #999;
+
+	}
+#note label{
+	color:#FFF;}		
+#note-text{
+	max-height:187px;
+	min-height:187px;
+	height:187px;
+	max-width:490px;
+	min-width:490px;
+	width:490px;
+	margin-left:3px;
+	margin-top:35px;
+	font-family:'lucida grande',tahoma,verdana,arial,sans-serif,Tahoma,Verdana,Georgia,Times;
+	font-size:14px;
+	font-weight:bold;
+	text-align:right;
+	background-color:transparent;
+	line-height:20px;
+
+	}	
+				
+#btnsave{
+	background-color:#E8DBBE;
+	border: 0px;
+	border-radius:5px;
+    margin:5px 20px 0px 0px;
+	float:right;
+}
+#check{
+	margin:7px 0px 0px 10px;}

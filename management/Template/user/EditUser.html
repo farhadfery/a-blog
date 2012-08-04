@@ -1,0 +1,38 @@
+<link href="css/user.css" rel="stylesheet" />
+<script src="js/user.js" language="javascript"></script>
+<div id="maindiv">
+<div id="header"><label>ویرایش کاربر.</label></div>
+<input type="hidden" id="EditId" value="{ID}"/>
+ <div id="mess"></div>
+       <table dir="rtl" width="400px" border="0" >
+         <tr>
+            <td align="left" width="115">نام کاربری :</td>
+            <td colspan="2" ><input id="name" type="text" name="NewName" value="{NAME}"/></td>
+         </tr>
+         <tr>
+           <td align="left" >کلمه عبور :</td>
+           <td colspan="2" ><input type="password" name="NewPass" id="NewPass"/></td>
+           </tr>
+           <tr>
+           <td align="left"  width="115">تکرار کلمه عبور :</td>
+           <td colspan="2"><input type="password" name="NewRPass" id="NewRPass"/></td>
+         </tr>
+         <tr>
+            <td align="left" >ایمیل :</td>
+            <td colspan="2" ><input type="text" id="NewEmail" name="NewEmail"  value="{EMAIL}"/></td>
+          </tr>
+          <tr>
+            <td rowspan="2" align="left"  valign="top">آواتار :</td>
+            <td valign="top" height="65px"><select name="image" id="image">
+              <option></option>
+              <!-- BEGIN BLOCK AVATAR -->
+              <option>{IMAGE}</option>
+              <!-- END BLOCK AVATAR -->
+            </select></td>
+            <td width="97" rowspan="2" ><img width="100px" src="../images/about/{AVATAR}" alt="avatar"/></td>
+          </tr>
+          <tr>
+            <td width="174" height="30px" valign="middle" align="left"><input type="button" id="save" value="ذخیره" /></td>
+          </tr> 
+     </table>
+</div>

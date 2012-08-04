@@ -1,0 +1,20 @@
+@charset "utf-8";
+/* CSS Document */
+
+.archive_heade,.archive_footer{
+	background-color:#FF9900;
+	padding-top:5px;
+	padding-bottom:5px;}
+#tbl_archive{
+	border:1px solid #CCC;}
+	
+#archive_label{
+	margin-right:30px;
+	font:Tahoma, Geneva, sans-serif, Arial, serif;
+	font-weight:bold;
+	font-size:14px;
+	
+	}	
+#Refresh{
+	float:left;
+	margin-left:5px;}

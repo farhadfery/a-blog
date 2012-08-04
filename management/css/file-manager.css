@@ -1,0 +1,73 @@
+@charset "utf-8";
+/* CSS Document */
+
+#tbl-file-manager-head{border:1px solid #CCC; width:872px; margin:auto;}
+#tbl-file-manager{border:0px solid #CCC; margin:auto;}
+#file-manager{
+	 border:0px solid #CCC;
+	 width:100%;
+	 height:600px;
+
+	}
+#Folder{
+	width: 870px;
+	height:40px;
+	margin:10px auto 1px auto ;
+	border:1px solid #CCC;
+	border-radius:5px 5px 0px 0px;
+	font-family:'lucida grande',tahoma,verdana,arial,sans-serif,Tahoma,Verdana,Georgia,Times;
+	font-weight:bold;
+	background:#F90  url(../images/head-file-manager.png) left no-repeat;
+}
+#Folder a{
+	 float:right;
+	 text-decoration:none;
+     color:#FFF;
+     margin-right:10px;
+}
+#Folder label{ margin-top:10px; margin-left:45px; float:left;}
+#Foler_name{
+	float:right;
+	text-align:right;
+}
+#select-folder{
+	float:right;
+	width:100px;
+	margin:5px;
+}
+#lbl-folder{
+	float:right;
+	margin:5px;
+}
+#Folder img{margin-top:-8px;}
+#file{
+	width:870px;
+	height:400px;
+	margin:0px auto 10px auto;
+	border:1px solid #CCC;
+	overflow:auto;}
+#div-upload{
+	width: 870px;
+	height:60px;
+	margin:10px auto 10px auto ;
+	border:1px solid #CCC;
+	border-radius:5px;
+	}
+td{
+	border-left:1px dotted #999;
+	border-bottom:1px dotted #999;
+	}	
+#tr-head{background-color:#F90;
+            height:30px; 
+			font-family:'lucida grande',tahoma,verdana,arial,sans-serif,Tahoma,Verdana,Georgia,Times;
+			 font-weight:bold; 
+			 }		
+#Up{ direction:rtl;float:right; margin-top:5px; margin-right:5px;}	
+legend{
+	border:1px solid #CCC;
+
+	border-radius:5px;
+	width:70px;
+	text-align:center;
+	font-family:'lucida grande',tahoma,verdana,arial,sans-serif,Tahoma,Verdana,Georgia,Times;
+	}

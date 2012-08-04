@@ -1,0 +1,37 @@
+<link rel="stylesheet" type="text/css" href="css/gallery.css"/>
+<script language="javascript" type="text/javascript" src="js/gallery.js"></script>
+	<div id="tabs-1">
+ <form action="modules/includes/gallery.php" method="post">
+<table id="TblSection" width="100%" dir="rtl">
+   <tr>
+      <td width="110px">نام بخش :</td>
+      <td width="200px"><input id="name" class="text" name="name" type="text" /></td>
+      <td></td>
+   </tr>
+   <tr>
+      <td>عکس آلبوم :</td>
+      <td><input id="name" class="text" name="AlbumCover" type="text" /></td>
+      <td><input class="text" type="submit" value="ذخیره"/></td>
+   </tr>
+</table>
+</form> 
+<div>
+
+</div>
+<hr>
+ <!-- BEGIN BLOCK ALBUM -->
+<div id="ListAlbum" class="Div{ID}"> 
+     <div class="AlbumSection">{SECTION}</div>
+     <div style="height:100px !important;"><center><img src="{IMAGE}" height="100px" /></center></div>
+     <div class="Control"><img class="Del" Delid="{ID}" src="images/trash.gif"/>
+                          <a href="?page=edit_album&id={ID}"><img class="Edit" EditId="{ID}" width="18px" src="images/edit.png"/></a> </div>
+ </div> 
+<!-- END BLOCK ALBUM -->
+<div style="clear:both"></div>
+<div class="count">
+   <!-- BEGIN BLOCK PAGE -->
+    <a class="acount" href="?page=album&count={COUNT}">{COUNT}</a>
+   <!-- END BLOCK PAGE --> 
+</div>
+	</div>
+

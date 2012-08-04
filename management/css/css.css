@@ -1,0 +1,18 @@
+@charset "utf-8";
+/* CSS Document */
+ul, li, h1, h2, h3, h4, h5, h6, p{padding:0; margin:0;}
+ul,li {list-style-type:none; text-transform:capitalize;}
+.clear {clear:both; *display:inline;/*IE only*/}
+
+/*menu*/
+#nav {float:right; width:847px; display:block;}
+#nav .jquery_out {float:right;line-height:32px;display:block; border-right:1px solid #fff; text-align:center; color:#fff; background:#062723 url(../images/slide-panel_03.png) 0 0 repeat-x;}
+#nav .jquery_out .smile {padding-left:1em;}
+#nav .jquery_inner {margin-left:16px;}
+#nav .jquery {margin-right:1px;padding:0 2em;}
+#nav .mainlevel {background:transparent; text-align:right; float:right;  border-left:1px solid #CCC; width:140px;/*IE6 only*/}
+#nav .mainlevel a {color:#000; text-decoration:none; line-height:32px; display:block; padding:0 20px; width:100px;}
+#nav .mainlevel a:hover {color:#fff; text-decoration:none; background:#062723 url(../images/slide-panel_03.png) 0 0 repeat-x;}
+#nav .mainlevel ul {display:none; position:absolute;}
+#nav .mainlevel li {border-top:1px solid #CCC; border-left:1px solid #CCC; border-right:1px solid #CCC; border-bottom:1px solid #CCC; background:#FFF; width:140px;/*IE6 only*/}
+.log {text-align:center; color:skyblue; line-height:24px; text-transform:capitalize; margin:50px auto;}

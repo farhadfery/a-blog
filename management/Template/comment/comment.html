@@ -1,0 +1,54 @@
+<link href="css/comment.css" rel="stylesheet"/>
+<script language="javascript" src="js/comment.js"></script>
+<script language="javascript" type="text/javascript" src="js/news.js"></script>
+	<script>
+	$(function() {
+		$( "#accordion" ).tabs();
+	});
+	</script>
+    <div id="accordion">
+	<ul>
+		<li><a class="OptionA" href="#tabs-1">گالری</a></li>
+		<li><a class="OptionA" href="#tabs-2">مقالات</a></li>
+       <li><a class="OptionA" href="#tabs-3">تماس با ما</a></li>
+	</ul>
+	<div id="tabs-1">
+     <table id="TBLGALLERY" width="100%" border="0" dir="rtl">
+     <!-- BEGIN BLOCK TR-GALLERY -->
+         <tr  bgcolor="{COLOR}">
+            <td width="150px"><a href="admin.php?page=comment_view&userid={ID}">{NAME}</a></td>
+            <td>{SUBJECT}</td>
+            <td align="center" width="20px"><a href="modules/includes/comment.php?Delid={ID}"><img src="images/trash.gif" /></a></td>
+         </tr>
+     <!-- END BLOCK TR-GALLERY -->  
+     </table>
+	</div>
+    
+	<div id="tabs-2">
+     <table id="TBLARTICLE" width="100%" border="0" dir="rtl">
+     <!-- BEGIN BLOCK TR-ARTICLE -->
+         <tr  bgcolor="{COLOR}">
+            <td width="150px"><a href="admin.php?page=comment_view&userid={ID}">{NAME}</a></td>
+            <td>{SUBJECT}</td>
+            <td align="center" width="20px"><a href="modules/includes/comment.php?Delid={ID}"><img src="images/trash.gif" /></a></td>
+         </tr>
+     <!-- END BLOCK TR-ARTICLE -->  
+     </table>
+   </div>
+   	<div id="tabs-3">     
+    <table id="TBLCONTACT" width="100%" border="0" dir="rtl">
+     <!-- BEGIN BLOCK TR-CONTACT -->
+         <tr  bgcolor="{COLOR}">
+            <td width="150px"><a href="admin.php?page=comment_view&userid={ID}">{NAME}</a></td>
+            <td>{COMMENT}</td>
+            <td align="center" width="20px"><a href="modules/includes/comment.php?Delid={ID}"><img src="images/trash.gif" /></a></td>
+         </tr>
+     <!-- END BLOCK TR-CONTACT -->  
+     </table>
+   </div> 
+
+   
+   
+
+     
+

@@ -1,0 +1,106 @@
+  <link rel="stylesheet" href="css/option.css" />
+  <script language="javascript" type="text/javascript" src="js/news.js"></script>
+	<script>
+	$(function() {
+		$( "#accordion" ).tabs();
+	});
+	</script>
+    <div id="accordion">
+	<ul>
+		<li><a class="OptionA" href="#tabs-1">وضعیت سیستم</a></li>
+		<li><a class="OptionA" href="#tabs-2">تنظیمات بخش اخبار</a></li>
+        <li><a class="OptionA" href="#tabs-3">عنوان & ایمیل</a></li>
+	</ul>
+	<div id="tabs-1">
+    <fieldset>
+     <legend>وضعیت سیستم</legend>
+        <form action="modules/includes/option.php" method="post">
+      <table border="0"  dir="rtl" width="100%" cellspacing="10px" >
+        <tr >
+          <td width="100px" align="left" ><label>وضعیت سیستم :</label></td>
+          <td>
+              <label title="فعال">فعال :</label><input {ON} name="active" type="radio" value="on" />
+              <label title="غیر فعال">غیر فعال :</label> <input {OFF} name="active" type="radio" value="off"/>
+          </td>
+        </tr>
+        <tr>
+        <td align="left" valign="top"><label>متن پیام :</label></td>
+          <td>
+          <textarea name="message" style="width:100%; height:100%;" >{MESSAGE}</textarea>
+          <input class="save" type="submit" value="ذخیره"/>
+          </td>
+        </tr>
+      </table>
+     </form> 
+</fieldset>
+	</div>
+    
+	<div id="tabs-2">
+    <fieldset>
+     <legend>بخش اخبار</legend>
+      <table border="0" dir="rtl" width="100%">
+       <tr>
+         <td width="120px"><label>اننخاب بخش اخبار :</label></td>
+         <td width="220px">
+            <select id="news" style="width:200px;">
+            <option></option>
+            <!-- BEGIN BLOCK NEWS -->
+            <option>{SECTION}</option>
+            <!-- END BLOCK NEWS -->
+             </select> 
+         </td>
+         <td></td>
+       </tr>
+       <tr>
+       <td></td>
+       <td> <input class="save"  type="button" value="ذخیره" id="insert"/></td>
+       </tr>
+       </table> 
+  
+    
+     </fieldset>
+   </div>
+   	<div id="tabs-3"> 
+    <form action="modules/includes/config.php" method="post">
+    <fieldset>
+          <table width="100%" align="right" border="0" dir="rtl">
+         <tr>
+            <td width="110px;">عنوان سایت :</td>
+            <td><input name="title" type="text" value="{TITLE}" /> </td>
+         </tr>     
+         <tr>
+            <td width="100px;">ایمیل:</td>
+            <td><input name="email" type="text" value="{EMAIL}" /> </td>
+         </tr>
+         <tr>
+            <td width="100px;">کلمات کلیدی :</td>
+            <td><input name="keywords" type="text" value="{KEYWORDS}" /><label class="example">اخبار , مقاله , آموزش</label></td>
+         </tr>
+         <tr>
+            <td width="100px;">توضیحات :</td>
+            <td><textarea  name="description">{DESCRIPTION}</textarea> </td>
+         </tr> 
+         <tr>
+            <td></td>
+            <td><input class="save" type="submit" value="ذخیره" /></td>
+         </tr>        
+      </table>
+     </fieldset>
+        </form>
+   </div>
+
+   	<!--<div id="tabs-3">
+    <fieldset>
+     <legend>تنظیمات ماژول ها</legend>
+     <table dir="rtl" width="100%" border="1">
+      				<!-- BEGIN BLOCK MODELS -->
+     					<!-- <tr>
+                           <td>{FILENAME}</td>       
+                           <td width="80px" align="center" >نصب</td>
+                           <td width="80px" align="center">حذف</td>
+                       </tr>
+                    <!-- END BLOCK MODELS -->   
+      <!-- </table>
+     </fieldset> 
+   </div>-->
+         

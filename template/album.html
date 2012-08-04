@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>{TITLE}</title>
+<meta name="keywords" content="A-BLOG"/>
+<meta name="keywords" content="A-BLOG V:1.4.7 BETA"/>
+<meta name="keywords" content="گالری عکس"/>
+
+<link href="css/gallery.css" rel="stylesheet" type="text/css"/>
+<link rel="stylesheet" href="css/animate.css">
+<script language="javascript" type="text/javascript" src="js/jquery-1.6.2.min.js"></script>
+<script src="js/jPages.js"></script>
+    
+<script>
+/* when document is ready */
+$(function(){
+
+    /* initiciate jPages */
+	$("div.holder").jPages({
+		containerID : "itemContainer",
+		animation   : "bounceIn",perPage : 20
+	});
+});
+</script>
+</head>
+<body>
+<div class="DivGallery">
+  <div class="title"><a href="index.php"><img class="home" src="images/home1.png" alt="home" /></a><h3>{TITLE}</h3></div>
+  <div id="content"> 
+      <!-- <li><a href="gallery.php?id={ID}"><img  class="img"  src="{ADD}" alt="image" ></a></li>-->
+        <!-- item container -->
+        <ul id="itemContainer">
+        <!-- BEGIN BLOCK ALBUM -->
+          <li><table class="li"  border="0">
+                 <tbody>
+                   <tr>
+                      <td >
+                        <center>
+                         <a href="gallery.php?Gallery={ID}"><img  id="{id}" class="img"  src="{ADD}" alt="{IMAGETITLE}" ></a>
+                         </center>
+                      </td>
+                   </tr>
+                
+                 </tbody>
+             </table>
+          </li>
+        <!-- END BLOCK ALBUM -->
+		</ul>
+          <div class="holder"></div>
+	</div> <!--! end of #content -->
+  
+</div>
+</body>
+</html>

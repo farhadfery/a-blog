@@ -1,0 +1,183 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>{TITLE}</title>
+		<meta http-equiv=”Content-Type” content=”text/html; charset=utf-8″>
+        <meta name="msvalidate.01" content="6372D3D7069BA144FA5876EA73829632" />
+       	<meta name="google-site-verification" content="google5550b47e2a568f9d" />
+        <meta name="alexaVerifyID" content="AM27_uE1fd3ZvoZzhHy-thcq5Lc" />
+        <meta name="keywords" content="A-BLOG"/>
+		<meta name="description" content="{DESCRIPTION}" />
+		<meta name="keywords" content="{KEYWORDS}" />
+		<meta name="googlebot" content="index, follow" />
+		<meta property='og:locale' content='fa_IR'/>
+		<meta property='og:title' content='{TITLE}'/>
+		<meta property='og:description' content='{TITLE}'/>
+		<meta property='og:url' content='http://photolive.ir/'/>
+		<meta property='og:site_name' content='{TITLE}'/>
+		<meta property='og:type' content='photolive,'/>
+		<meta content="index" name="googlebot" >
+		<meta name="author" content="photolive Team" >
+		<meta name="copyright" content="photolive Team" >
+		<meta name="revisit-after" content="1 Minutes" >
+		<meta name="robots" content="index,follow" />
+
+<link href="css/style.css" rel="stylesheet" type="text/css"/>
+<link rel="stylesheet" href="css/animate.css">
+
+    <link rel="stylesheet" href="template/themes/default/default.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="css/nivo-slider.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="css/style.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="css/ticker-style.css" type="text/css" media="screen" />
+</head>
+
+<body>
+       
+        <div class="contact">
+          <div class="contactTitle" ><img class="close" src="images/close.png"/> <label>تماس با ما</label></div>
+          <table dir="rtl" width="100%" border="0"> 
+            <tr>
+               <td width="80"> <label>نام :</label></td>
+               <td><input class="inpContact" id="UserName" type="text" /></td>
+               <td><label>ایمیل :</label></td>
+               <td><input class="inpContact" id="UserEmail" type="email"/></td>
+            </tr>
+            <tr >
+              <td><label>متن پیام :</label></td>
+              <td colspan="3"><textarea id="mess" class="textarea"></textarea></td>
+            </tr>
+          </table>
+            <input class="inpContact" id="insert" type="button" value="ارسال"/>
+       </div>
+       <div class="about">
+          <div class="aboutTitle" ><img class="close" src="images/close.png"/> <label>درباره ما</label></div>
+       <table width="600px" dir="rtl" border="0" align="center">
+        <!-- BEGIN BLOCK ABOUT -->
+           <tr>
+               <td valign="top">{DESC}</td>
+               <td width="120px"><center><img src="images/about/{IMAGE}" alt="{IMAGE}" width="100px"></center></td>
+           </tr>
+       <!-- END BLOCK ABOUT -->    
+       </table>
+       </div>
+       
+ <div class="MainDiv">
+      <div class="MenuDiv">
+        <img class="logo" src="images/logo.png" alt="logo" />
+        <div class="menu" id="home"><h5><p class="menutext">صفحه اصلی</p></h5></div>
+        <div class="menu" id="Menu_gallery"><h5><p class="menutext">گالری</p></h5></div>
+        <div class="menu" id="contact"><h5><p class="menutext">تماس با ما</p></h5></div>
+         <div class="menu" id="about"><h5><p class="menutext">درباره ما</p></h5></div>
+      </div>
+       <div class="status">
+       	<ul id="js-news" class="js-hidden">
+		      <li class="ticker-swipe">{STATUS}</li>
+	     </ul>
+        </div>
+      
+      <div class="SlideShow">         
+           <div id="slideshow">
+              <div class="slider-wrapper theme-default">
+                    <div id="slider" class="nivoSlider">
+                      <!-- BEGIN BLOCK SLIDER -->
+                          <img  src="images/Slider/{CONTENT}" alt="{CONTENT}"  class="active" />
+                      <!-- END BLOCK SLIDER -->
+                    </div>
+              </div>
+
+            </div>
+      </div>
+      
+      <div class="GalleryDiv">
+         <div id="content"> 
+        <!-- item container -->
+        <ul id="itemContainer">
+        <!-- BEGIN BLOCK GALLERY -->
+          <li>
+               <center>
+                  <a href="album.php?Section={ID}"><img class="img"  id="{NAME}" class="img"  src="{ADD}" alt="{NAME}" ></a>
+              </center>
+          </li>
+        <!-- END BLOCK GALLERY -->
+		</ul>
+          <div class="holder"></div>
+	</div> <!--! end of #content -->
+
+      </div>
+      <div style="clear:both"></div>
+       <center><div id="load"></div></center>
+      <div class="ContentDiv">
+         
+
+      </div>
+       <div id="PageNum">
+           <!-- BEGIN BLOCK PAGES -->
+           <input style="border-radius:5px; border:1px solid grey; width:30px; float:right; margin:3px 3px 3px 3px;" class="p" type="button" pageid="{PAGE}" value="{PAGE}"/>
+           <!-- END BLOCK PAGES --> 
+       </div>
+<div id="bfooter"> 
+      <div id="footer"><div class="GalleryTitle"> <h4><label>عنوان مطالب</label></h4></div>
+            <!-- BEGIN BLOCK RMENU -->
+               <div class="DivA" id={ID}><h5><label style="margin-right:10px;">{RIGHTMENU}</label></h5></div>
+            <!-- END BLOCK RMENU -->
+      </div>
+       <div id="footer"><div class="GalleryTitle"><h4><label>لینک دوستان</label></h4></div>
+           <!-- BEGIN BLOCK FLINK -->
+            <div class="DivF"><a href="{LINK}">{NAME}</a></div>
+           <!-- END BLOCK FLINK -->
+ 
+       </div> 
+       <div id="footer"><div class="GalleryTitle"><h4><label>افراد آنلاین</label></h4></div>
+         <div class="OnlineUser">
+          <label>افراد آنلاین : {CONT}</label><br>
+          <label>آی پی : {IP}</label>
+         </div> 
+        </div>
+
+       </div>
+ </div>
+    <script language="javascript" type="text/javascript" src="js/jquery-1.6.2.min.js"></script>
+    <script language="javascript" type="text/javascript" src="js/jquery-ui-1.8.16.custom.min.js"></script>
+    <script language="javascript" type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/jquery.nivo.slider.pack.js"></script>
+    <script type="text/javascript" src="js/jquery.ticker.js"></script>
+    <script src="js/jPages.js"></script>
+    <script type="text/javascript">
+    $(window).load(function() {
+        $('#slider').nivoSlider();
+    });
+	
+	/* when document is ready */
+$(function(){
+
+    /* initiciate jPages */
+	$("div.holder").jPages({
+		containerID : "itemContainer",
+		animation   : "bounceIn",perPage :9
+	});
+});
+
+    $(function () {
+        $('#js-news').ticker({
+        speed: 0.10,           
+        ajaxFeed: false,       
+        feedUrl: false,       
+	                      
+        feedType: 'xml',       
+        htmlFeed: true,        
+        debugMode: true,       
+  	                       
+        controls: false,        
+        titleText: 'کلام روز »',   
+        displayType: 'reveal', 
+        direction: 'rtl',       
+        pauseOnItems: 2000,    
+        fadeInSpeed: 300,     
+        fadeOutSpeed: 300     
+        });
+    });
+    </script> 
+
+</body>
+</html>

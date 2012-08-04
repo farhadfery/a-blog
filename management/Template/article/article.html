@@ -1,0 +1,30 @@
+<script type="text/javascript" src="js/article.js"></script>
+<link rel="stylesheet" type="text/css" href="css/article.css"/>
+<div class="HeaderDiv"><label>مطالب موجود در سایت</label></div>    
+<div class="MainDiv">
+<!-- BEGIN BLOCK TblArticle -->
+  <div class="ROW" id="{ID}">
+          <div class="RowTitle">{TITLE}</div>
+          <div class="RowEdit"><a href="admin.php?page=article_edit&id={ID}"><img src="images/edit.png" width="16px" DelId="{ID}"/></a></div>
+          <div class="RowDel"><img  class="Article-Delete" src="images/trash.gif" DelId="{ID}"/></div>
+          <div class="RowArchive"><img  class="Article-Archive" src="images/icon-16-archive.png" DelId="{ID}"/></div>
+          <div style="clear:both" ></div>
+  </div>    
+<!-- END BLOCK TblArticle -->  
+</div>
+
+ <div class="page">
+   <!-- BEGIN BLOCK PAGE -->
+    <a class="count" href="?page=article&count={COUNT}">{COUNT}</a>
+   <!-- END BLOCK PAGE -->
+ </div>  
+   
+      
+<!--<input class="article-btn" id="article_del" value="حذف" type="button" />
+<input class="article-btn" id="archive" value="آرشیو" type="button"/>-->
+
+
+
+
+
+

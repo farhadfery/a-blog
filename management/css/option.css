@@ -1,0 +1,59 @@
+@charset "utf-8";
+/* CSS Document */
+label{
+	font-size:12px;
+	font-family:'lucida grande',tahoma,verdana,arial,sans-serif,Tahoma,Verdana,Georgia,Times;
+	font-weight:bold;
+	}
+.OptionA{
+	font-size:12px;
+	font-family:'lucida grande',tahoma,verdana,arial,sans-serif,Tahoma,Verdana,Georgia,Times;
+	font-weight:bold;
+	}
+.save{
+	font-size:9px;
+	font-family:'lucida grande',tahoma,verdana,arial,sans-serif,Tahoma,Verdana,Georgia,Times;
+	border:2px solid #CCC;
+	width:90px;
+	height:30px;
+	border-radius:5px;
+	margin-top:5px;
+	float:left;
+	background-color:#F6AD37;
+	padding:0;
+	
+	}	
+textarea{
+	     border:1px solid #CCC; 
+         border-radius:5px;
+         padding:5px 5px 5px 5px;
+		 min-height:100px;
+		 max-height:100px;
+		 min-width:600px;
+		 max-width:600px;
+		 }
+input[type="text"]{
+	border-radius:5px;
+	border:1px solid #CCC;
+	}
+.example{
+	color:#999;
+	font-weight:normal;
+	margin-right:10px;
+	}			 	
+fieldset{
+	border:1px solid #CCC;
+	border-radius:5px;
+	}
+legend{
+	border:1px solid #CCC;
+	border-radius:5px;
+	width:130px;
+	text-align:center;
+	height:29px;
+	background-color:#F6AD37;
+	font-size:15px;
+	font-weight:bold;
+	line-height:28px}
+	
+				 

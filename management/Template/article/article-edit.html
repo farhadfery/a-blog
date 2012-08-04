@@ -1,0 +1,38 @@
+<script type="text/javascript" src="Editor/tiny_mce/tiny_mce.js"></script>
+<script type="text/javascript" src="Editor/tiny_mce/tiny.js"></script>
+<script type="text/javascript" src="js/article.js"></script>
+<link rel="stylesheet" type="text/css" href="css/article.css"/>
+
+<form action="modules/includes/article.php" method="post">
+<input type="hidden"  name="id" value="{ID}"/>
+<table id="new_article_tbl" dir="rtl" width="100%">
+   <tr bgcolor="#C6D0D3" height="30px;">
+    <td><label>عنوان مطللب :</label> <input id="txt_title" name="UPtitle" type="text"  value="{TITLE}"/></td>
+         <td><label>نام بخش :</label> <select id="op_section" name="UPsection"> 
+                                           <option></option>
+                                            <!-- BEGIN BLOCK OP-SECTION -->
+                                             <option value="{ID}">{OPTION}</option>  
+                                             <!-- END BLOCK OP-SECTION -->                                         
+                                       </select> 
+       </td>
+   </tr>
+</table>
+   
+  <div  style="margin-top:5px; margin-bottom:10px;" >
+       <textarea id="fulltext" name="UPfulltext" style="width:900px; height:300px;">{FULLTEXT}</textarea>
+  </div>
+  
+   <div id="td_summary" style=" margin-bottom:10px; display:none;">
+          <img id="close_summary" src="images/close.png" style="z-index:999999; position:absolute"  width="25"/>
+        <textarea id="summary" name="UPsummary" style="width:900px; height:300px;">{SUMMARY}</textarea> 
+    </div> 
+    
+<table id="new_article_tbl" dir="rtl" width="100%"> 
+   <tr bgcolor="#C6D0D3">
+      <td >
+           <input  id="article_btn" class="btn_summary"type="button" value="ادامه مطلب"/>
+           <input id="article_btn" type="submit" value="ذخیره"/>
+      </td>
+   </tr>
+</table>
+</form>

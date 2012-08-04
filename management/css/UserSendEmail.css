@@ -1,0 +1,50 @@
+fieldset{
+	border:1px solid #CCC;
+	border-radius: 5px;
+	
+}
+.Emailmain{
+	border:1px solid #CCC;
+	border-radius: 5px;
+	width: 360px;
+	height: 300px;
+	margin:auto;
+	background-color: #EEE;
+}
+#txtemail{
+	width: 250px;
+	height: 25px;
+    margin: 10px  0 5px 10px;
+    border:1px solid #CCC;
+    border-radius: 5px;
+}
+#txtsubject{
+	width: 250px;
+	height: 25px;
+    margin: 10px  0 5px 10px;
+    border:1px solid #CCC;
+    border-radius: 5px;
+    text-align: right;
+}
+#txtbody{
+    margin: 10px  0 5px 10px;
+    border:1px solid #CCC;
+    border-radius: 5px;
+    text-align: right;
+}
+#send{
+	margin: 10px 0 0 20px; 
+}
+.back{
+	border:1px solid #CCC;
+	border-radius: 0 5px 5px 0;
+	float: left;
+	width: 30px;
+	height: 25px;
+	margin-left: -10px;
+}
+label{
+	margin-left: 10px;
+	
+}
+

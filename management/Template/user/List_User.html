@@ -1,0 +1,17 @@
+<link href="css/user.css" rel="stylesheet" />
+<script src="js/user.js" language="javascript"></script>
+<div id="maindiv">
+<div id="header"><label>لیست کاربر ها</label></div>
+<!-- BEGIN BLOCK USERS -->
+    <div Id="User" class="TBL{ID}" >
+       <div class="UserName"><label>نام:</label><label>{NAME}</label></div>
+       <div class="UserEmail"><label>ایمیل:</label><label>{EMAIL}</label></div>
+       <div class="Control"><a href="admin.php?page=Edit_user&id={ID}"><img class="edit" src="images/edit.png" EditId="{ID}"/></a>
+                            <img class="del" src="images/trash.gif" Delid="{ID}"/>
+                            <a href="admin.php?page=UserSendEmail&email={EMAIL}"><img class="email" src="images/Send-icon.png" EmailId="{ID}"/></a> 
+      </div>
+       <div class="avatar"><img width="100px" src="../images/about/{AVATAR}" alt="avatar"/></div>
+    </div>
+ <!-- END BLOCK USERS -->
+<div style="clear:both"></div>
+</div>

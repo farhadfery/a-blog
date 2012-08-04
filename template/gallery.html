@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>{IMAGETITLE}</title>
+<meta name="keywords" content="{IMAGETITLE}"/>
+<meta name="description" content="{DESCRIPTION}"/>
+<link href="css/gallery.css" rel="stylesheet"/>
+<script src="js/jquery-1.6.2.min.js" language="javascript"></script>
+<script src="js/gallery.js" language="javascript"></script>
+</head>
+<body>
+        <div class="DivGallery">
+            <div class="title">
+              <div id="next">
+                 <a href="?id={PREVIOUS}"><img src="images/previous.png" /></a>
+                 <a href="?id={NEXT}"><img src="images/next.png" /></a>
+                 <a href="album.php?Section={ALBUMID}"><img src="images/home1.png" /></a>
+            </div>
+            <h3>{IMAGETITLE}</h3>
+            </div>
+                 <center>
+                 <img class="image"src="{ADD}" alt="{IMAGETITLE}"/>
+                 </center>
+                <hr> 
+              <div class="description">
+              <table dir="rtl" width="100%">
+                 <tr>
+                    <td width="80px"><img class="avatar" width="80px" src="images/about/{AVATAR}" alt="{AVATAR}" ></td>
+                    <td  valign="top"  background="images/note.jpg">{DESCRIPTION}</td>
+                    
+                  </tr>
+              </table>
+              </div>
+              
+           <div class="comment"></div>
+           <div class="contact">
+          <div class="contactTitle" style="background-image:url(images/menubg.png)" ><label>نظر دهی</label></div>
+            <input type="hidden"  id="imagetitle" value="{IMAGETITLE}" />
+            <input type="hidden" id="GID" value="{ID}"/>  
+             <div><input id="name" class="inpContact" type="text"  placeholder="نام"/></div>
+             <div><input id="email" class="inpContact" type="email" placeholder="ایمیل"/></div>
+             <div><textarea id="text" class="textarea"></textarea></div>
+            <input class="inpContact" id="insert" type="button" value="ارسال"/>
+        </div>
+        </div>
+      
+        
+</body>
+</html>

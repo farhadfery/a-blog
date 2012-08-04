@@ -1,0 +1,49 @@
+@charset "utf-8";
+/* CSS Document */
+.comment{
+	border:1px solid #CCC;
+	border-radius:5px;
+	direction:rtl;
+	}
+.OptionA{
+	font-size:13px;
+	}
+	
+#TBLCONTACT{}
+a{text-decoration:none;}
+#TBLCONTACT label:hover{
+	cursor:pointer;
+
+	}
+#TBLARTICLE{}
+#TBLARTICLE label:hover{
+	cursor:pointer;
+
+	}
+#TBLGALLERY{}
+#TBLGALLERY label:hover{
+	cursor:pointer;
+
+	}
+#TblView{
+	border:1px solid #CCC;
+	border-radius:5px;
+	margin:auto;}
+#subject{
+	width:400px;}		
+input[type="text"]{
+	border:1px solid #CCC;
+	border-radius:5px;
+	}
+textarea{
+		border:1px solid #CCC;
+	    border-radius:5px;
+		width:400px;
+		margin:auto;}
+#TblControl{
+	text-align:center;
+	margin:auto;
+	border:1px solid #CCC;
+	border-radius:5px;
+	margin-bottom:5px;
+	margin-top:5px;}									

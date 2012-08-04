@@ -1,0 +1,39 @@
+<link rel="stylesheet" href="css/section.css" type="text/css"/>
+<script src="js/section.js" language="javascript" type="text/javascript"></script>
+<!--<form action="includes/new_section.php" method="get">-->
+<table dir="rtl" align="right">
+  <tr>
+    <td><label>نام بخش :</label></td>
+    <td><input type="text" name="tfsection" id="tfsection"></td>
+    <td><input type="button" id="insert" value="ذخیره"/></td>
+  </tr>
+</table>
+<!--</form>--> 
+<img id="Refresh" src="images/Refresh.png"/>
+<div id="edit"> <img id="close" src="images/close.png" />
+  <label>ویرایش اطلاعات</label>
+  <table border="0" width="100%" dir="rtl">
+    <tr>
+      <td width="100px"><label>نام بخش :</label></td>
+      <td><input type="text" id="TfEdit" />
+        <input id="BtnEdit" type="button" value="ذخیره"/>
+        <input type="hidden" id="hid"/></td>
+    </tr>
+  </table>
+</div>
+<table id="tbllist"  style="border:1px solid #CCC;" cellpadding="5px"width="100%" dir="rtl">
+  <tr>
+    <td bgcolor="#FF9900" width="20px;"></td>
+    <td align="right" bgcolor="#FF9900"><label>نام بخش ها</label></td>
+  </tr>
+  <!-- BEGIN BLOCK TR-SECTION -->
+  <tr style="border:1px solid grey; " bgcolor="{COLOR}">
+    <td class="opdel" width="20px;"><input type="checkbox" name="chdel" class="chdel" value="{ID}"/></td>
+    <td><span class="o" id="td{ID}" idval="{ID}" val="{SECTION}">{SECTION}</span></td>
+  </tr>
+  <!-- END BLOCK TR-SECTION -->
+  <tr id="btr">
+    <td bgcolor="#FF9900" width="20px;"></td>
+    <td align="right" bgcolor="#FF9900"><input type="button" value="حذف" id="del"/></td>
+  </tr>
+</table>

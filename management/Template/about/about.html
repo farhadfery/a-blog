@@ -1,0 +1,33 @@
+<script language="javascript" src="js/about.js" ></script>
+<script type="text/javascript" src="Editor/tiny_mce/tiny_mce.js"></script>
+<script type="text/javascript" src="Editor/tiny_mce/tiny-about.js"></script>
+<link rel="stylesheet" type="text/css" href="css/about.css"/>
+<form action="modules/includes/about.php" method="post">
+  <table dir="rtl" width="100%" border="0" class="tbl_about">
+    <tr>
+      <td><textarea  rows="15"  cols="108" class="description" name="description"></textarea></td>
+    </tr>
+    <tr>
+      <td colspan="2"><select  name="image" style="width:200px">
+          <!-- BEGIN BLOCK ImageName -->
+          
+          <option>{Name}</option>
+          <!-- END BLOCK ImageName -->
+        </select>
+        <input type="submit" id="insert" value="ذخیره" /></td>
+    </tr>
+  </table>
+</form>
+<!-- BEGIN BLOCK About -->
+
+<table dir="rtl" width="100%" border="0" id="tbl-about" class="tbl{ID}">
+  <tr>
+    <td valign="top" width="700px"><div class="p">{DESCRIPTION}</div></td>
+    <td id="td-img" valign="top" width="100px"><div class="img"> <img width="90px" src="../images/about/{IMAGE}"/> </div></td>
+  </tr>
+  <tr >
+    <td colspan="2" id="DE"><input class="del" ImgId="{ID}"type="button" value="Del" />
+      <a class="edit" href="admin.php?page=about_edit&id={ID}" >ویرایش</a></td>
+  </tr>
+</table>
+ <!-- END BLOCK About -->

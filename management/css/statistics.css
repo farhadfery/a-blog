@@ -1,0 +1,56 @@
+@charset "utf-8";
+/* CSS Document */
+fieldset{
+	border:1px solid #DDD;
+	border-radius:5px;
+	}
+.HeSt{
+	height:30px;
+	border:1px solid #DDD;
+	border-radius:5px;
+	margin:auto;
+	background-color:#F90;
+	line-height:30px;
+	box-shadow:#CCC 0 0 3px;
+	}
+label{
+   float:right;
+    margin-right:10px;
+	}
+		
+.amar{
+	height:100px;
+	width:132px;
+	border:2px solid #CCC;
+	border-radius:5px;
+	margin:5px;
+	float:right;
+	background-color:#CCC;
+	}
+.InAmar{
+	height:70px;
+	width:122px;
+	border:1px solid #EEE;
+	border-radius:5px; 
+	margin:4px 4px 4px 4px;
+	background-color:#FFF;
+	}
+.cont{
+	border:1px solid #CCC;
+	height:50px;
+	width:50px;
+	margin-right:auto;
+	margin-left:auto;
+	margin-top:5px;
+	border-radius:5em;
+	background-color:#09F;
+	box-shadow:0 0 3px #000;
+	text-align:center;
+	font:Tahoma, Geneva, sans-serif;
+	font-size:x-large;
+	line-height:45px;
+	}
+.lb{
+	text-align:center;
+	margin-top:5px;
+	}				

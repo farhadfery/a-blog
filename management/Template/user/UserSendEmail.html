@@ -1,0 +1,19 @@
+<link href="css/UserSendEmail.css" rel="stylesheet" />
+<script src="js/SendEmail.js" language="javascript" type="text/javascript"></script>
+<fieldset>
+	<div class="back"><a href="admin.php?page=List_user"><img src="images/back.png" alt="back" /></a></div>
+	<div class="Emailmain">
+		<div class="Email">
+			<input type="text" id="txtemail"  readonly="readonly"  value="{EMAIL}"/><label>:ایمیل</label>
+		</div>
+		<div class="Subject">
+			<input type="text" id="txtsubject" /><label>:موضوع</label>
+		</div>
+		<div class="body">
+			<textarea name="txtbody" rows="8" cols="40" id="txtbody"></textarea>
+		</div>
+		<div class="Send">
+			<input type="button" id="send"  value="ارسال"/>
+		</div>
+	</div>
+</fieldset>

@@ -1,0 +1,22 @@
+@charset "utf-8";
+/* CSS Document */
+.p{ overflow:hidden; text-overflow:ellipsis; width:780px; }
+#tbl-about{margin:10px 0 10px 0;border:1px solid #CCC; background-color:#F0F0F0;}
+.tbl_about{border:1px solid #CCC; background-color:#F0F0EE;}
+.img{float:left;}
+.up{width:300px; margin-top:90px}
+blockquote{border:1px solid grey;}
+#DE{border-top:1px solid #999;}
+.del,.edit,#insert{
+	font-family:Tahoma, Geneva, sans-serif, Arial, serif;
+
+
+	 background-color:#71AB57;
+	 border:1px solid #666;
+	 margin-left:10px;
+	 width:40px;
+	 color:#FFF;
+	 font-weight:bold;
+	 text-decoration:none;
+		}
+	

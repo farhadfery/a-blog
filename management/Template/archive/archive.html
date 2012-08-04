@@ -1,0 +1,19 @@
+<link rel="stylesheet" href="css/article.css"/>
+<script language="javascript" src="js/article.js"></script>
+<div class="HeaderDiv"><label>مطالب موجود در سایت</label></div>    
+<div class="MainDiv">
+<!-- BEGIN BLOCK TblArchive -->
+  <div class="ROW" id="{ID}">
+          <div class="RowTitle">{TITLE}</div>
+          <div class="RowArchive"><img class="r_archive" src="images/Archive.png" alt="آرشیو" DelId="{ID}" width="20"/></div>
+          <div class="RowDel"><img class="del_archive" src="images/trash.gif" DelId="{ID}"/></div>
+          <div style="clear:both" ></div>
+  </div>    
+<!-- END BLOCK TblArchive -->  
+</div>
+
+ <div class="page">
+   <!-- BEGIN BLOCK PAGE -->
+    <a class="count" href="?page=archive&count={COUNT}">{COUNT}</a>
+   <!-- END BLOCK PAGE -->
+ </div>  

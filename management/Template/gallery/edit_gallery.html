@@ -1,0 +1,33 @@
+<link rel="stylesheet" type="text/css" href="css/gallery.css"/>
+<style>
+.gImage{max-width:200px; border:1px solid #CCC; margin-top:10px; border-radius:5px; -moz-box-shadow: 0px 2px 8px #999; -webkit-box-shadow: 0px 2px 8px #999; box-shadow: 0px 2px 8px #999;}
+</style>
+<form action="modules/includes/gallery.php" method="post">
+<input type="hidden" name="editid" value="{ID}"/>
+  <table class="TblGallery" width="100%" border="0" align="center" dir="rtl">
+    <tr>
+      <td width="110px">دسته بندی :</td>
+      <td><select class="section" name="section">
+          <!-- BEGIN BLOCK SECTION -->
+          <option value="{SectionID}">{NAME}</option>
+          <!-- END BLOCK SECTION -->
+        </select></td>
+      <td width="110px">نام :</td>
+      <td><input class="text"  name="txtname" id="txtname" type="text" value="{NAME}" /></td>
+    </tr>
+    <tr>
+      <td>توضحات عکس :</td>
+      <td><textarea name="description" class="text">{DESCRIPTION}</textarea></td>
+      <td>آدرس عکس :</td>
+      <td><input class="text"  name="editadd" id="txtadd" type="text" value="{ADD}" /></td>
+    </tr>
+    <tr> </tr>
+    <tr>
+      <td></td>
+      <td><input class="text" type="submit" value="ذخیره"/></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </table>
+  <img class="gImage" src="{ADD}" alt="{TITLE}" />
+</form>

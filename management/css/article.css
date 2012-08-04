@@ -1,0 +1,103 @@
+.MainDiv{
+
+	}
+.HeaderDiv{
+	height:25px;
+	background-color:#F90;
+	border-radius:5px;
+	}
+.HeaderDiv label{
+	float:right;
+	margin-right:10px;
+	line-height:25px;
+	}
+.ROW{
+	background-color:#EEE;
+	border:1px solid #CCC;
+	margin:5px 0 5px 0;
+	text-align:right;
+	border-radius:5px;
+	}
+	
+.RowTitle{
+	width:780px;
+	float:right;
+	margin-right:5px;
+	}			
+.RowDel{
+	width:33px;
+	float:right;
+	}
+.RowArchive{
+	width:33px;
+	float:right;
+	}
+.RowEdit{
+	width:33px;
+	float:right;
+	}	
+.page{
+	background-color:#F90;
+	border-radius:5px;
+	height:25px;
+	}
+.count{
+	margin-right:5px;
+	margin-top:3px;
+	float:right;
+	border:1px solid #CCC;
+	min-width:10px;
+	text-align:center;
+	background:#FFF;
+	border-radius:5px;
+	box-shadow: 0 0 5px #0066FF;
+	}	
+
+
+
+
+
+
+
+
+#list{
+   border:1px solid #CCC;
+}
+#heade{
+	background-color:#FF9900;
+}
+#lst-footer{
+
+	background-color:#FF9900;
+}
+.article-btn {
+   margin: 0px 20px 0px 0px;
+}
+#article-title:hover{
+	cursor:pointer;
+}
+#title-article{
+	margin-right: 30px;
+	font-size: 100%;
+}
+.Refresh{
+	float:left;}
+a{
+	text-decoration:none;}
+#new_article_tbl{ 
+border:1px solid #CCC;}
+#txt_title{
+	width:500px;}
+#op_section{
+	width:100px;}
+#article_btn{
+	font-family:Tahoma, Geneva, sans-serif, Arial, serif;
+	
+float:left;
+border:1px solid grey;
+border-radius:5px;
+margin-right:10px;
+background-color:#FFF;
+}
+
+	
